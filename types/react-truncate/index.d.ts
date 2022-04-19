@@ -11,6 +11,7 @@ export interface TruncateProps extends React.HTMLProps<Truncate> {
     ellipsis?: React.ReactNode | undefined;
     trimWhitespace?: boolean | undefined;
     onTruncate?(isTruncated: boolean): void;
+    children?: React.ReactNode;
 }
 
 declare class Truncate extends React.Component<TruncateProps> { }
